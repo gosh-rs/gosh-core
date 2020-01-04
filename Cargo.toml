@@ -9,8 +9,8 @@ authors = ["Wenping Guo <ybyygu@gmail.com>"]
 
 [dependencies]
 vecfx = { git = "https://github.com/gchemol/vecfx.git", features = ["nalgebra"] }
-gchemol = {git = "https://github.com/ybyygu/gchemol.git", branch="dev"}
-guts = { git = "https://github.com/ybyygu/guts.git", branch="dev" }
+gchemol = {git = "https://github.com/ybyygu/gchemol.git"}
+guts = { git = "https://github.com/ybyygu/guts.git" }
 #vecfx = { path = "/home/ybyygu/Workspace/Programming/gchemol-rs/vecfx" }
 #gchemol = { path = "/home/ybyygu/Workspace/Programming/gchemol-rs/gchemol/gchemol" }
 #guts = { path = "/home/ybyygu/Workspace/Programming/guts" }
