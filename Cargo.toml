@@ -6,14 +6,16 @@ name = "gosh-core"
 version = "0.0.1"
 edition = "2018"
 authors = ["Wenping Guo <ybyygu@gmail.com>"]
+description = "A meta package for managing shared packages in gosh project"
+homepage = "https://github.com/gosh-rs/core"
+repository = "https://github.com/gosh-rs/core"
+license = "MIT OR Apache-2.0"
 
 [dependencies]
-vecfx = { git = "https://github.com/gchemol/vecfx.git", features = ["nalgebra"] }
-gchemol = {git = "https://github.com/ybyygu/gchemol.git", branch="dev"}
-guts = { git = "https://github.com/ybyygu/guts.git", branch="dev" }
-#vecfx = { path = "/home/ybyygu/Workspace/Programming/gchemol-rs/vecfx" }
-#gchemol = { path = "/home/ybyygu/Workspace/Programming/gchemol-rs/gchemol/gchemol" }
-#guts = { path = "/home/ybyygu/Workspace/Programming/guts" }
+vecfx = { version="0.0.8", features = ["nalgebra"] }
+gut = { version = "0.0.8", package = "gchemol-gut" }
+text-parser = { version = "0.0.7", package = "gchemol-parser" }
+gchemol = { version="0.0.38" }
 
 [dev-dependencies]
 # cargo:1 ends here
