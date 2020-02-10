@@ -1,21 +1,23 @@
-# cargo
-
 # [[file:~/Workspace/Programming/gosh-rs/core/gosh-core.note::*cargo][cargo:1]]
 [package]
 name = "gosh-core"
-version = "0.0.1"
+version = "0.0.2"
 edition = "2018"
 authors = ["Wenping Guo <ybyygu@gmail.com>"]
-description = "A meta package for managing shared packages in gosh project"
-homepage = "https://github.com/gosh-rs/core"
-repository = "https://github.com/gosh-rs/core"
+description = "A meta package for managing shared dependencies in gosh project"
+homepage = "https://github.com/gosh-rs/gosh-core"
+repository = "https://github.com/gosh-rs/gosh-core"
 license = "MIT OR Apache-2.0"
 
 [dependencies]
-vecfx = { version="0.0.8", features = ["nalgebra"] }
-gut = { version = "0.0.8", package = "gchemol-gut" }
-text-parser = { version = "0.0.7", package = "gchemol-parser" }
-gchemol = { version="0.0.38" }
+vecfx = { version="0.1", features = ["nalgebra"] }
+gut = { version = "0.1.4", package = "gchemol-gut" }
+text-parser = { version = "0.2", package = "gchemol-parser" }
+gchemol = { version="0.0.41" }
 
 [dev-dependencies]
+
+[features]
+# for adhoc hacking
+adhoc = ["gchemol/adhoc", "gut/adhoc", "vecfx/adhoc", "text-parser/adhoc"]
 # cargo:1 ends here
