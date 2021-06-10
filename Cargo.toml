@@ -1,4 +1,4 @@
-# [[file:~/Workspace/Programming/gosh-rs/core/gosh-core.note::*cargo][cargo:1]]
+# [[file:gosh-core.note::*cargo][cargo:1]]
 [package]
 name = "gosh-core"
 version = "0.0.2"
@@ -11,9 +11,9 @@ license = "MIT OR Apache-2.0"
 
 [dependencies]
 vecfx = { version="0.1", features = ["nalgebra"] }
-gut = { version = "0.1.4", package = "gchemol-gut" }
-text-parser = { version = "0.2", package = "gchemol-parser" }
-gchemol = { version="0.0.41" }
+gut = { version = "0.1.5", package = "gchemol-gut" }
+text-parser = { version = "0.3", package = "gchemol-parser" }
+gchemol = { version="0.0.42" }
 
 [dev-dependencies]
 
