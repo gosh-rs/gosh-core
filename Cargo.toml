@@ -11,9 +11,10 @@ license = "MIT OR Apache-2.0"
 
 [dependencies]
 vecfx = { version="0.1", features = ["nalgebra"] }
-gut = { version = "0.2", package = "gchemol-gut" }
+gut = { version = "0.2.2", package = "gchemol-gut" }
 text-parser = { version = "0.3", package = "gchemol-parser" }
 gchemol = { version="0.0.42" }
+rand = "0.8.5"
 
 [dev-dependencies]
 
