@@ -1,7 +1,7 @@
 # [[file:gosh-core.note::81f1c75f][81f1c75f]]
 [package]
 name = "gosh-core"
-version = "0.1.0"
+version = "0.1.1"
 edition = "2021"
 authors = ["Wenping Guo <ybyygu@gmail.com>"]
 description = "A meta package for managing shared dependencies in gosh project"
@@ -10,10 +10,10 @@ repository = "https://github.com/gosh-rs/gosh-core"
 license = "MIT OR Apache-2.0"
 
 [dependencies]
-vecfx = { version="0.1", features = ["nalgebra"] }
+vecfx = { version = "0.1", features = ["nalgebra"] }
 gut = { version = "0.4", package = "gchemol-gut" }
 text-parser = { version = "0.3", package = "gchemol-parser" }
-gchemol = { version="0.1.0" }
+gchemol = { version = "0.1.3" }
 rand = "0.8.5"
 
 [dev-dependencies]
